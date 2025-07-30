@@ -18,7 +18,7 @@ nltk.download('stopwords', quiet=True)
 nltk.download('vader_lexicon', quiet=True)
 
 # Configuration
-API_KEY = "AIzaSyCu2STFdnOXHU_6wCTtKfLjPLDZwO8eg3I"
+os.environ.get("GOOGLE_API_KEY")
 RAW_URL = "https://youtu.be/ix9cRaBkVe0?si=YBB7uGyrHvTUIG-l"
 
 def extract_video_id(url: str) -> str:
